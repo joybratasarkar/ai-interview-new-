@@ -1,0 +1,19 @@
+# Ignore virtual environments
+venv/
+.env
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore Git and other version control folders
+.git
+.gitignore
+
+# Ignore logs and cache
+logs/
+*.log
+.cache/

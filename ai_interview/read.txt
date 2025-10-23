@@ -1,0 +1,15 @@
+        if user_text.lower() == 'start':
+            # Start with greeting
+            result = greeting_node(state)
+        elif question_idx == 0 and user_text:
+            # After greeting, show intro + first question
+            intro_result = intro_node(state)
+            question_result = ask_question_node(state)
+            result = {
+                'bot_response': f"{intro_result['bot_response']} {question_result['bot_response']}",
+                'question_idx': 0,
+                'done': False
+            }
+        else:
+            # User answered, ask next question
+            result = ask_question_node(state)

@@ -1,0 +1,17 @@
+elasticsearch:
+  host: "localhost"
+  port: 9200
+  index: "jd_index"
+
+faiss:
+  index_path: "./data/faiss_index"
+
+openai:
+  client: "your_openai_api_key"
+
+cache:
+  host: "localhost"
+  port: 6379
+  ttl: 3600
+
+embedding_model: "all-MiniLM-L6-v2"

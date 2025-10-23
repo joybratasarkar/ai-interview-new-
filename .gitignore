@@ -1,0 +1,8 @@
+venv/
+shared_venv/
+app/ai_jd_creator/myenv/
+app/ai_jd_creator/venv/
+shared_venv/
+logs/
+
+sharedvenv/

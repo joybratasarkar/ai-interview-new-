@@ -1,0 +1,48 @@
+                ┌─────────────────────────┐
+                │  Start / New Session    │
+                └──────────┬──────────────┘
+                           v
+                ┌─────────────────────────┐
+                │ Greet + Introduce Bot   │
+                │ "Can we start?"         │
+                └──────────┬──────────────┘
+                           v
+                  ┌──────────────────┐
+        Yes? ---> │  Candidate says  │ <--- No
+                  │ "yes / haan" ?   │
+                  └───────┬──────────┘
+                          │Yes
+                          v
+                ┌─────────────────────────┐
+                │ Ask next question from  │
+                │ predefined QUESTIONS[]  │
+                └──────────┬──────────────┘
+                           v
+                ┌─────────────────────────┐
+                │ Get candidate's answer  │
+                └──────────┬──────────────┘
+                           v
+                ┌─────────────────────────────┐
+                │ Classify answer:             │
+                │ Related (YES) / Open-chat(NO)│
+                └──────────┬──────────────┬────┘
+                           │YES           │NO
+                           v              v
+         ┌─────────────────────────┐   ┌───────────────────────────────────────┐
+         │ Follow-up logic         │   │ 1) Answer briefly to their question   │
+         │                         │   │ 2) Then say:                          │
+         │ If follow-ups < 2       │   │    "Let's stick to the interview."    │
+         │    → Ask follow-up      │   │ 3) Move to **next question**          │
+         │ Else                    │   └───────────────────────────────────────┘
+         │    → Go to next Q       │
+         └──────────┬──────────────┘
+                    v
+       ┌─────────────────────────────────────┐
+       │ More questions left?                │
+       └──────────┬──────────────┬───────────┘
+                  │Yes           │No
+                  v              v
+  ┌─────────────────────────┐    ┌───────────────────────────┐
+  │ Ask next question       │    │ Wrap-up: Thank candidate  │
+  │ (loop back)             │    │ Phase = completed         │
+  └─────────────────────────┘    └───────────────────────────┘

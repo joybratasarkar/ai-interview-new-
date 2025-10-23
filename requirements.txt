@@ -1,0 +1,81 @@
+# Core FastAPI Backend
+fastapi==0.115.8
+uvicorn==0.34.0
+pydantic>=2.0.0
+pydantic-settings
+python-multipart
+
+# Streamlit Frontend
+lit>=1.28.0
+websockets>=11.0.0
+requests>=2.31.0
+
+# CLI support
+click
+
+# LangGraph and LangChain
+langgraph==0.2.70
+langchain==0.3.17
+langchain-google-vertexai==2.0.13
+langchain-text-splitters
+
+# Database Storage
+pymongo>=4.6.0
+motor==3.7.0
+
+# Redis Conversation Memory
+redis[hiredis]>=5.0.0
+hiredis==2.4.0
+rmtest==0.7.0
+
+# Google Cloud AI
+google-cloud-aiplatform
+google-auth
+grpcio-status==1.70.0
+
+# Machine Learning
+numpy
+scikit-learn
+sentence-transformers==3.4.1
+nltk==3.9.1
+torchaudio==2.7.1
+datasets==3.5.0
+
+# Utilities
+python-dotenv==1.0.1
+backports.tarfile==1.2.0
+importlib-metadata==8.0.0
+platformdirs==4.2.2
+inflect==7.3.1
+jaraco.collections==5.1.0
+tomli==2.0.1
+watchdog==6.0.0
+ipython==9.0.1
+
+# DevOps and Workers
+celery==5.5.3
+gunicorn==23.0.0
+locust==2.32.9
+
+# Development and Testing
+pytest
+pytest-asyncio
+httpx
+pip-chill==1.0.3
+pipreqs==0.4.13
+playwright==1.50.0
+PyPDF2==3.0.1
+pytesseract==0.3.13
+python-docx==1.2.0
+python-dotenv==1.0.1
+python-multipart==0.0.20
+rmtest==0.7.0
+sentence-transformers==3.4.1
+spire.doc==13.1.0
+PyMuPDF>=1.24.0
+PyPDF2>=3.0.0
+
+# Build tools
+setuptools
+wheel
+    

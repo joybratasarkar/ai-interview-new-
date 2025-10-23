@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+
+  ai_interview:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: xooper-ai_interview
+    container_name: ai_interview
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: uvicorn apps.ai_interview.main:app --host 0.0.0.0 --port 8000
+    restart: always
+    healthcheck:
+      test: >
+        /bin/sh -c "nc -z ${REDIS_HOST:-localhost} ${REDIS_PORT:-6379} && nc -z xoopercluster.alvrs.mongodb.net 27017"
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
