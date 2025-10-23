@@ -5,7 +5,7 @@ from fastapi import WebSocket
 import redis.asyncio as aioredis
 import asyncio
 
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 
 redis_client = aioredis.from_url(REDIS_URL, decode_responses=True)
 
@@ -100,7 +100,7 @@ class ConnectionManager:
 
     async def poll_and_send(self, task_id: str, room_id: str, task_type: str, timeout: int = 30):
         """Poll Celery task result and send to WebSocket when ready."""
-        from apps.ai_interview.celery_app import celery_app
+        from ai_interview.celery_app import celery_app
         import json
         
         print(f"[POLL] Starting to poll task {task_id} for room {room_id}")

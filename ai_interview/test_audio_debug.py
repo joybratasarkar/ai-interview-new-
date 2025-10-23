@@ -3,7 +3,7 @@
 import base64
 import numpy as np
 import json
-from apps.ai_interview.tasks.audio import process_audio
+from ai_interview.tasks.audio import process_audio
 
 def test_audio_processing():
     """Test audio processing with synthetic data"""

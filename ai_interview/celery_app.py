@@ -1,6 +1,6 @@
 import os
 from celery import Celery
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 from dotenv import load_dotenv
 import asyncio
 import redis.asyncio as aioredis
@@ -17,9 +17,9 @@ celery_app = Celery(
 )
 
 celery_app.conf.task_routes = {
-    "apps.ai_interview.tasks.audio.process_audio": {"queue": "audio_queue"},
-    "apps.ai_interview.tasks.video.process_video": {"queue": "av_queue"},
-    "apps.ai_interview.tasks.natural_interview_flow.process_natural_interview": {"queue": "audio_queue"},
+    "ai_interview.tasks.audio.process_audio": {"queue": "audio_queue"},
+    "ai_interview.tasks.video.process_video": {"queue": "av_queue"},
+    "ai_interview.tasks.natural_interview_flow.process_natural_interview": {"queue": "audio_queue"},
 
 }
 
@@ -58,11 +58,11 @@ celery_app.conf.update(
 
 
 # ✅ Register task modules
-import apps.ai_interview.tasks.audio
-import apps.ai_interview.tasks.video
-# import apps.ai_interview.tasks.conversation_flow
-# import apps.ai_interview.tasks.natural_conversation_flow
-# import apps.ai_interview.tasks.langgraph_natural_flow
-import apps.ai_interview.tasks.natural_interview_flow
+import ai_interview.tasks.audio
+import ai_interview.tasks.video
+# import ai_interview.tasks.conversation_flow
+# import ai_interview.tasks.natural_conversation_flow
+# import ai_interview.tasks.langgraph_natural_flow
+import ai_interview.tasks.natural_interview_flow
 
-celery_app.autodiscover_tasks(['apps.ai_interview.tasks'])
+celery_app.autodiscover_tasks(['ai_interview.tasks'])

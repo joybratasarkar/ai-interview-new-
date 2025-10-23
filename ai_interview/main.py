@@ -5,9 +5,9 @@ import redis.asyncio as aioredis
 import asyncio
 import json
 from fastapi.middleware.cors import CORSMiddleware
-from apps.ai_interview.api import websocket, routes
-from apps.ai_interview.services.shared import manager  
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.api import websocket, routes
+from ai_interview.services.shared import manager  
+from ai_interview.config import REDIS_URL
 from dotenv import load_dotenv
 
 load_dotenv()

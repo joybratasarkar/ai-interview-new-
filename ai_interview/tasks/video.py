@@ -1,5 +1,5 @@
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.celery_app import celery_app
+from ai_interview.config import REDIS_URL
 import redis
 import json
 
@@ -8,7 +8,7 @@ import json
 
 publisher = redis.Redis.from_url(REDIS_URL)
 
-@celery_app.task(name="apps.ai_interview.tasks.video.process_video")
+@celery_app.task(name="ai_interview.tasks.video.process_video")
 def process_video(payload: dict) -> None:
     """
     payload = { "room_id": "<interview_42>", "blob": "<base64‐video‐blob>" }

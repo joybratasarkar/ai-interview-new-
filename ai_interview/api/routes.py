@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from apps.ai_interview.tasks.example import add
-from apps.ai_interview.celery_app import celery_app
+from ai_interview.tasks.example import add
+from ai_interview.celery_app import celery_app
 from celery.result import AsyncResult
 from fastapi.responses import JSONResponse
 router = APIRouter()

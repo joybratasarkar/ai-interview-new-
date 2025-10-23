@@ -10,7 +10,7 @@ import redis
 from celery import current_app as celery_app
 from celery.result import AsyncResult
 
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 
 class DisconnectCleanupManager:
     """Comprehensive cleanup manager for user disconnection"""
@@ -157,7 +157,7 @@ class DisconnectCleanupManager:
         """Clear in-memory audio processing state"""
         try:
             # Import here to avoid circular imports
-            from apps.ai_interview.tasks.audio import stream_states, paused_rooms
+            from ai_interview.tasks.audio import stream_states, paused_rooms
             
             # Clear in-memory state
             stream_states.pop(user_id, None)

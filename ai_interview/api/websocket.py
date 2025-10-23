@@ -6,15 +6,14 @@ import time
 import torch
 import numpy as np
 from scipy.io import wavfile
-from apps.ai_interview.smart_turn.inference import predict_endpoint
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.tasks.video import process_video
-from apps.ai_interview.tasks.natural_interview_flow import (
+from ai_interview.celery_app import celery_app
+from ai_interview.tasks.video import process_video
+from ai_interview.tasks.natural_interview_flow import (
     process_natural_interview,
 )
-from apps.ai_interview.services.socket_manager import manager
+from ai_interview.services.socket_manager import manager
 import redis.asyncio as aioredis
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 
 router = APIRouter()
 
@@ -184,7 +183,7 @@ async def clear_all_state(client_id):
 
 async def poll_and_update_interview_state(task_id, client_id):
     """Poll Celery task, send to WebSocket and update interview state when complete"""
-    from apps.ai_interview.celery_app import celery_app
+    from ai_interview.celery_app import celery_app
     
     try:
         # Poll for task completion directly

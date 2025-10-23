@@ -2,7 +2,7 @@ import os
 import json
 import logging
 from typing import Dict, List, Any, TypedDict, Annotated
-from apps.ai_interview.celery_app import celery_app
+from ai_interview.celery_app import celery_app
 
 # LangGraph imports
 from langgraph.graph import StateGraph, START, END
@@ -217,7 +217,7 @@ class NaturalInterviewManager:
 
 natural_manager = NaturalInterviewManager()
 
-@celery_app.task(name="apps.ai_interview.tasks.natural_interview_flow.process_natural_interview", bind=True)
+@celery_app.task(name="ai_interview.tasks.natural_interview_flow.process_natural_interview", bind=True)
 def process_natural_interview(self, payload: Dict[str, Any]) -> Dict[str, Any]:
     """Process interview turn"""
     try:

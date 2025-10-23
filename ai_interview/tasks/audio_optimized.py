@@ -1,8 +1,8 @@
 # apps/ai_interview/tasks/audio_optimized.py
 # Optimized audio processing for AI interviewer with accurate 2-second pause detection
 
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.celery_app import celery_app
+from ai_interview.config import REDIS_URL
 
 import numpy as np
 import torch
@@ -218,7 +218,7 @@ class OptimizedStreamState:
         return pause_detected, metrics
 
 
-@celery_app.task(name="apps.ai_interview.tasks.audio_optimized.process_audio_optimized")
+@celery_app.task(name="ai_interview.tasks.audio_optimized.process_audio_optimized")
 def process_audio_optimized(payload):
     """Optimized audio processing with accurate 2-second pause detection"""
     start_time = time.time()
@@ -338,7 +338,7 @@ async def _cleanup_room(room_id: str):
     paused_rooms.pop(room_id, None)
 
 
-@shared_task(name="apps.ai_interview.tasks.audio_optimized.cleanup_audio_optimized")
+@shared_task(name="ai_interview.tasks.audio_optimized.cleanup_audio_optimized")
 def cleanup_audio_optimized(room_id: str):
     """Optimized audio cleanup task"""
     try:

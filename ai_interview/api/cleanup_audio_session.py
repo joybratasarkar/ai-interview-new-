@@ -1,6 +1,6 @@
 import asyncio
 import redis.asyncio as aioredis
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 
 # Global Redis client (async)
 redis_client = aioredis.from_url(REDIS_URL, decode_responses=True)

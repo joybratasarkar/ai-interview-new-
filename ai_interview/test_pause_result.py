@@ -4,7 +4,7 @@ import base64
 import numpy as np
 import json
 import time
-from apps.ai_interview.tasks.audio import process_audio
+from ai_interview.tasks.audio import process_audio
 
 def test_pause_detection_result():
     """Test that pause detection returns proper result"""

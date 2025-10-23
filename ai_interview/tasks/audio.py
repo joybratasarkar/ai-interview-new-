@@ -10,8 +10,7 @@ import torch
 import redis
 from scipy.io import wavfile
 
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.smart_turn.inference import predict_endpoint
+from ai_interview.celery_app import celery_app
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 RATE, CHUNK = 16000, 512
@@ -86,7 +85,7 @@ def _process_segment(buffer: List[Tuple[float, np.ndarray]], start_ts: float) ->
     return {"prediction": label, "probability": res.get("probability", 0.0)}
 
 # ─── Celery Task ────────────────────────────────────────────────────────────────
-@celery_app.task(name="apps.ai_interview.tasks.audio.process_audio")
+@celery_app.task(name="ai_interview.tasks.audio.process_audio")
 def process_audio(payload) -> dict:
     """Accepts one base64-encoded PCM16 chunk per call, buffers and VADs."""
     # parse

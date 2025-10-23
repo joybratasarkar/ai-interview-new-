@@ -5,7 +5,7 @@ import json
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.config import REDIS_URL
 
 r = redis.Redis.from_url(REDIS_URL)
 

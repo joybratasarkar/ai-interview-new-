@@ -1,6 +1,6 @@
 import os, json, logging, random
 from typing import TypedDict, Dict, List, Any, Annotated
-from apps.ai_interview.celery_app import celery_app
+from ai_interview.celery_app import celery_app
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph.message import add_messages
@@ -182,7 +182,7 @@ class NaturalInterviewManager:
 
 natural_manager = NaturalInterviewManager()
 
-@celery_app.task(name="apps.ai_interview.tasks.natural_interview_flow.process_natural_interview", bind=True)
+@celery_app.task(name="ai_interview.tasks.natural_interview_flow.process_natural_interview", bind=True)
 def process_natural_interview(self, payload: Dict[str, Any]) -> Dict[str, Any]:
     data = payload if isinstance(payload, dict) else json.loads(payload)
     state: InterviewState = {

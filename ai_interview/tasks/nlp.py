@@ -1,5 +1,5 @@
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.celery_app import celery_app
+from ai_interview.config import REDIS_URL
 import redis
 import json
 

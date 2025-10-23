@@ -4,8 +4,8 @@ import asyncio
 import json
 import logging
 from celery.result import AsyncResult
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.services.shared import manager
+from ai_interview.celery_app import celery_app
+from ai_interview.services.shared import manager
 
 logger = logging.getLogger(__name__)
 

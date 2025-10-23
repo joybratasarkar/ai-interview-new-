@@ -2,7 +2,7 @@
 
 import json
 import asyncio
-from apps.ai_interview.tasks.natural_interviewer import ConversationManager
+from ai_interview.tasks.natural_interviewer import ConversationManager
 
 async def demo_natural_interview():
     """

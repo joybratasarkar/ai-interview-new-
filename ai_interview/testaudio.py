@@ -7,12 +7,12 @@ import base64
 from collections import deque
 
 # Import your StreamState and process_chunk logic
-from apps.ai_interview.tasks.audio import StreamState
+from ai_interview.tasks.audio import StreamState
 
 # We'll monkey‑patch time.time inside that module
 import time as real_time
 import importlib
-import apps.ai_interview.tasks.audio as audio_mod
+import ai_interview.tasks.audio as audio_mod
 
 def test_pause():
     # 1) Monkey‑patch time.time in the audio module

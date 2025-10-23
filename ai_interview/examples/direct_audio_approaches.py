@@ -27,7 +27,7 @@ def _submit_and_cleanup_v2(room_id: str) -> dict:
     }
 
 # In audio.py - Modified process_audio task
-@celery_app.task(name="apps.ai_interview.tasks.audio.process_audio_v2")
+@celery_app.task(name="ai_interview.tasks.audio.process_audio_v2")
 def process_audio_v2(payload):
     # ... existing audio processing logic ...
     
@@ -58,7 +58,7 @@ Send directly to WebSocket manager from Celery task
 """
 
 # In audio.py - Import WebSocket manager
-from apps.ai_interview.services.shared import manager
+from ai_interview.services.shared import manager
 
 # Modified _submit_and_cleanup with direct WebSocket sending
 async def _submit_and_cleanup_direct(room_id: str):

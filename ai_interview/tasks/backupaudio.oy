@@ -1,7 +1,7 @@
 # apps/ai_interview/tasks/audio.py
 
-from apps.ai_interview.celery_app import celery_app
-from apps.ai_interview.config import REDIS_URL
+from ai_interview.celery_app import celery_app
+from ai_interview.config import REDIS_URL
 
 import numpy as np
 import torch
@@ -76,7 +76,7 @@ class StreamState:
         return (now - self.last_speech_time) >= PAUSE_SECONDS
 
 
-@celery_app.task(name="apps.ai_interview.tasks.audio.process_audio")
+@celery_app.task(name="ai_interview.tasks.audio.process_audio")
 def process_audio(payload):
     # Parse JSON payload
     if isinstance(payload, str):

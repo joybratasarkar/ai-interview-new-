@@ -14,7 +14,7 @@ services:
       - .:/app
     env_file:
       - .env
-    command: uvicorn apps.ai_interview.main:app --host 0.0.0.0 --port 8000
+    command: uvicorn ai_interview.main:app --host 0.0.0.0 --port 8000
     restart: always
     healthcheck:
       test: >

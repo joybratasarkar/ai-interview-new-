@@ -1,4 +1,4 @@
-from apps.ai_interview.celery_app import celery_app
+from ai_interview.celery_app import celery_app
 
 @celery_app.task
 def add(x, y):

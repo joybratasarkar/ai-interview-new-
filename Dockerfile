@@ -26,7 +26,7 @@ EXPOSE 8000
 
 
 
-ENV APP4="apps.ai_interview.main:app"
+ENV APP4="ai_interview.main:app"
 ENV APP4_PORT=8000
 
 
