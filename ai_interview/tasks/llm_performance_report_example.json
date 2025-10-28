@@ -1,0 +1,114 @@
+{
+  "session_summary": {
+    "session_id": "ai_interview_session_20250827",
+    "timestamp": "2025-08-27T10:30:00Z",
+    "total_requests": 15,
+    "total_session_time": 45.67,
+    "total_llm_calls": 52,
+    "total_llm_time": 23.45,
+    "average_request_time": 3.04,
+    "average_llm_calls_per_request": 3.5
+  },
+  "request_details": [
+    {
+      "request_id": "interview_room123_1640995200",
+      "timestamp": "2025-08-27T10:30:15Z",
+      "total_request_time": 2.456,
+      "total_llm_calls": 3,
+      "total_llm_time": 1.234,
+      "llm_time_percentage": 50.2,
+      "non_llm_time": 1.222,
+      "average_llm_time": 0.411,
+      "room_id": "room123",
+      "user_input": "I have experience with Python and Django...",
+      "question_index": 2,
+      "follow_up_count": 0,
+      "llm_calls": [
+        {
+          "call_sequence": 1,
+          "call_name": "STAR_Analysis",
+          "model": "gemini-2.0-flash-lite-001",
+          "start_time": 1640995200.123,
+          "end_time": 1640995201.357,
+          "duration_seconds": 1.234,
+          "prompt_length": 156,
+          "response_length": 89,
+          "success": true,
+          "error": null,
+          "context": "Analyzing answer completeness using STAR method",
+          "timestamp": "2025-08-27T10:30:15.123Z"
+        },
+        {
+          "call_sequence": 2,
+          "call_name": "Pattern_Analysis",
+          "model": "gemini-2.0-flash-lite-001",
+          "start_time": 1640995200.123,
+          "end_time": 1640995201.279,
+          "duration_seconds": 1.156,
+          "prompt_length": 145,
+          "response_length": 67,
+          "success": true,
+          "error": null,
+          "context": "Detecting answer quality patterns and ownership",
+          "timestamp": "2025-08-27T10:30:15.123Z"
+        },
+        {
+          "call_sequence": 3,
+          "call_name": "Intent_Classification",
+          "model": "gemini-2.0-flash-lite-001",
+          "start_time": 1640995200.123,
+          "end_time": 1640995201.212,
+          "duration_seconds": 1.089,
+          "prompt_length": 2847,
+          "response_length": 6,
+          "success": true,
+          "error": null,
+          "context": "Classifying user intent: 'I have experience working with Python and...'",
+          "timestamp": "2025-08-27T10:30:15.123Z"
+        }
+      ],
+      "performance_alerts": [],
+      "optimization_metrics": {
+        "parallel_speedup": "4.5s sequential vs 1.234s parallel",
+        "redundant_calls_eliminated": 2,
+        "cache_hits": 1,
+        "cache_misses": 0
+      }
+    }
+  ],
+  "performance_insights": {
+    "slowest_request": {
+      "request_id": "interview_room456_1640995800",
+      "duration": 8.234,
+      "reason": "Cache miss + slow LLM responses"
+    },
+    "fastest_request": {
+      "request_id": "interview_room789_1640996000", 
+      "duration": 1.234,
+      "reason": "Full cache hits + parallel processing"
+    },
+    "most_llm_calls": {
+      "request_id": "interview_room101_1640996200",
+      "calls": 5,
+      "reason": "Follow-up + conclusion generation"
+    },
+    "average_by_intent": {
+      "Answer": {"avg_time": 2.45, "avg_calls": 3.2},
+      "RepeatQuestion": {"avg_time": 0.89, "avg_calls": 1.0},
+      "ClarifyQuestion": {"avg_time": 1.23, "avg_calls": 2.0},
+      "EndInterview": {"avg_time": 1.56, "avg_calls": 1.5}
+    }
+  },
+  "system_health": {
+    "llm_success_rate": 98.1,
+    "average_response_time": 3.04,
+    "cache_hit_rate": 78.5,
+    "parallel_processing_efficiency": 85.2,
+    "performance_targets": {
+      "target_response_time": 3.0,
+      "actual_response_time": 3.04,
+      "target_met": false,
+      "improvement_needed": 0.04
+    }
+  }
+}

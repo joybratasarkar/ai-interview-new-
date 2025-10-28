@@ -1,0 +1,230 @@
+{
+  "scenario_info": {
+    "role_title": "Data Scientist",
+    "scenario_id": "test_data_scientist_1758008218694_3327",
+    "start_time": "2025-09-16T13:06:58.694410",
+    "end_time": "2025-09-16T13:08:37.221231"
+  },
+  "conversation_log": [
+    {
+      "type": "exchange",
+      "phase": "greeting",
+      "intent": "Answer",
+      "user_input": "Hello! Thank you for this opportunity. I'm excited to discuss how my experience aligns with this role.",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 4.359218597412109,
+      "timestamp": "2025-09-16T13:07:09.516744"
+    },
+    {
+      "type": "exchange",
+      "phase": "introduction",
+      "intent": "Answer",
+      "user_input": "I have 3-7 years of experience in data science and machine learning. I'm passionate about extracting insights from complex datasets and enjoy working on predictive modeling and statistical analysis.",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.14087557792663574,
+      "timestamp": "2025-09-16T13:07:17.941842"
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "Answer",
+      "context": "technical",
+      "user_input": "Based on my experience, I would approach this by {approach}. For example, {example}.",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.2394580841064453,
+      "timestamp": "2025-09-16T13:07:23.417761",
+      "delay_before_response": 5.224378604054616
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "Answer",
+      "context": "behavioral",
+      "user_input": "Based on my experience, I would approach this by {approach}. For example, {example}.",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.17075657844543457,
+      "timestamp": "2025-09-16T13:07:32.885586",
+      "delay_before_response": 5.692854960931459
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "Answer",
+      "context": "situational",
+      "user_input": "I have worked with Python, R, TensorFlow, and SQL extensively. In my previous role, I improved customer churn prediction accuracy by 25%.",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 21.666061878204346,
+      "timestamp": "2025-09-16T13:08:05.223584",
+      "delay_before_response": 5.802042956282516
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "ClarifyQuestion",
+      "context": "general",
+      "user_input": "When you say best practices, are you referring to implementation approach?",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.016872167587280273,
+      "timestamp": "2025-09-16T13:08:11.363535",
+      "delay_before_response": 1.9914477621615725
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "Hesitation",
+      "context": "general",
+      "user_input": "I need to think through this carefully...",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.026813507080078125,
+      "timestamp": "2025-09-16T13:08:22.144940",
+      "delay_before_response": 5.942118117952711
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "RepeatQuestion",
+      "context": "general",
+      "user_input": "Would you mind restating the question?",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.02365279197692871,
+      "timestamp": "2025-09-16T13:08:26.102418",
+      "delay_before_response": 0.7484772757219291
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "SmallTalk",
+      "context": "general",
+      "user_input": "Actually, how has your day been going?",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.022784709930419922,
+      "timestamp": "2025-09-16T13:08:30.952519",
+      "delay_before_response": 1.239825973854649
+    },
+    {
+      "type": "exchange",
+      "phase": "dynamic_interview",
+      "intent": "EndInterview",
+      "context": "general",
+      "user_input": "I believe we've covered everything. Can we finish the interview?",
+      "ai_response": {
+        "task_type": "natural_interview",
+        "status": "completed",
+        "result": {
+          "bot_response": "Sorry, there was an issue. Let me restart.",
+          "error": "No synchronous function provided to \"greeting\".\nEither initialize with a synchronous function or invoke via the async API (ainvoke, astream, etc.)",
+          "question_idx": 0,
+          "done": false,
+          "interview_status": "error"
+        }
+      },
+      "response_time": 0.021712779998779297,
+      "timestamp": "2025-09-16T13:08:37.217601",
+      "delay_before_response": 2.2488260993352123
+    }
+  ],
+  "test_metrics": {
+    "total_exchanges": 10,
+    "intents_tested": [
+      "SmallTalk",
+      "ClarifyQuestion",
+      "Hesitation",
+      "Answer",
+      "EndInterview",
+      "RepeatQuestion"
+    ],
+    "avg_response_time": 2.6688206672668455,
+    "success_rate": 1.0,
+    "errors": []
+  }
+}

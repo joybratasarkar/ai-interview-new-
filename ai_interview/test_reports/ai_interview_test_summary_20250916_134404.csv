@@ -1,0 +1,6 @@
+scenario_id,role_title,start_time,end_time,duration_minutes,total_exchanges,intents_tested,avg_response_time,min_response_time,max_response_time,success_rate,error_count,errors
+test_software_developer_1758009843339_9897,Software Developer,2025-09-16T13:34:03.339365,2025-09-16T13:35:16.941215,1.23,11,"Answer, Hesitation, SmallTalk, ClarifyQuestion, EndInterview, OffTopic, RepeatQuestion",0.614,0.105,4.992,1.0,0,
+test_data_scientist_1758009921945_4765,Data Scientist,2025-09-16T13:35:21.945264,2025-09-16T13:36:52.088004,1.5,10,"Answer, Hesitation, SmallTalk, ClarifyQuestion, EndInterview, RepeatQuestion",2.788,0.015,21.659,1.0,0,
+test_product_manager_1758010017108_6543,Product Manager,2025-09-16T13:36:57.108926,2025-09-16T13:37:07.118993,0.17,0,,0.0,0,0,0.0,1,Connection error: timed out during opening handshake
+test_devops_engineer_1758010032128_5443,DevOps Engineer,2025-09-16T13:37:12.128693,2025-09-16T13:38:20.863812,1.15,10,"Answer, Hesitation, SmallTalk, ClarifyQuestion, EndInterview, RepeatQuestion",0.02,0.012,0.07,1.0,0,
+test_ux_designer_1758010105882_9670,UX Designer,2025-09-16T13:38:25.882550,2025-09-16T13:44:04.521321,5.64,11,"Answer, SmallTalk, ClarifyQuestion, EndInterview, OffTopic, RepeatQuestion",2.142,0.0,21.175,0.909,1,Hesitation intent failed: Response timeout

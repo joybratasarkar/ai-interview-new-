@@ -1,0 +1,18 @@
+{
+  "scenario_info": {
+    "role_title": "Product Manager",
+    "scenario_id": "test_product_manager_1758010017108_6543",
+    "start_time": "2025-09-16T13:36:57.108926",
+    "end_time": "2025-09-16T13:37:07.118993"
+  },
+  "conversation_log": [],
+  "test_metrics": {
+    "total_exchanges": 0,
+    "intents_tested": [],
+    "avg_response_time": 0.0,
+    "success_rate": 0.0,
+    "errors": [
+      "Connection error: timed out during opening handshake"
+    ]
+  }
+}

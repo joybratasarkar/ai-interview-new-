@@ -9,7 +9,7 @@ from ai_interview.services.shared import manager
 
 logger = logging.getLogger(__name__)
 
-async def poll_task_result(task_id: str, client_id: str, task_type: str, timeout: int = 10):
+async def poll_task_result(task_id: str, client_id: str, task_type: str, timeout: int = 60):
     """
     Poll for Celery task result and send directly to WebSocket when ready
     

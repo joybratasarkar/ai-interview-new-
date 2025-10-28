@@ -1,0 +1,31 @@
+[2025-08-12 18:07:10,535: WARNING/ForkPoolWorker-7] Processing interview - User text: 'Yes. I do. Thank you so much.', Question index: 0, Phase: intro
+[2025-08-12 18:07:10,536: WARNING/ForkPoolWorker-7] Full state: {'messages': [], 'room_id': 'asc1ik1v', 'user_input': 'Yes. I do. Thank you so much.', 'bot_response': '', 'question_idx': 0, 'done': False, 'phase': 'intro', 'follow_up_count': 0, 'conversation_history': '', 'performance_scores': [], 'average_score': 5.0}
+[2025-08-12 18:07:10,563: WARNING/ForkPoolWorker-7] Routing decision - user_input: 'Yes. I do. Thank you so much.', current_idx: 0, phase: intro, done: False
+[2025-08-12 18:07:10,563: WARNING/ForkPoolWorker-7] User ready after intro, starting questions
+[2025-08-12 18:07:10,567: WARNING/ForkPoolWorker-7] Using base question 0: Tell me about yourself and your technical background - what draws you to AI/ML engineering?
+[2025-08-12 18:07:10,567: WARNING/ForkPoolWorker-7] Asking question 0: Tell me about yourself and your technical background - what draws you to AI/ML engineering?
+[2025-08-12 18:07:10,573: WARNING/ForkPoolWorker-7] Interview result: {'messages': [], 'room_id': 'asc1ik1v', 'user_input': 'Yes. I do. Thank you so much.', 'bot_response': 'Tell me about yourself and your technical background - what draws you to AI/ML engineering?', 'question_idx': 0, 'done': False, 'phase': 'questions', 'follow_up_count': 0, 'conversation_history': '', 'performance_scores': [], 'average_score': 5.0}
+
+
+[2025-08-12 18:08:21,416: WARNING/ForkPoolWorker-7] Processing interview - User text: 'Nothing. Just simply I can say.', Question index: 0, Phase: questions
+[2025-08-12 18:08:21,416: WARNING/ForkPoolWorker-7] Full state: {'messages': [], 'room_id': 'asc1ik1v', 'user_input': 'Nothing. Just simply I can say.', 'bot_response': '', 'question_idx': 0, 'done': False, 'phase': 'questions', 'follow_up_count': 2, 'conversation_history': '\nQ: Tell me about yourself and your technical background - what draws you to AI/ML engineering?\nA: Okay? So yeah.\nEdgeCase: Okay, I understand. It\'s perfectly alright if that specific question doesn\'t immediately come to mind, \\[Candidate Name].\n\nPerhaps we could shift gears slightly. Could you tell me about a time you had to learn a new technology or framework quickly to solve a problem?\nQ: Tell me about yourself and your technical background - what draws you to AI/ML engineering?\nA: Yeah. Nothing I can say, but I would like to learn about it.\nFollowup: Could you elaborate on the "portal model" you mentioned? What specific technical challenges did you face while building it?', 'performance_scores': [1.0], 'average_score': 1.0}
+[2025-08-12 18:08:21,423: WARNING/ForkPoolWorker-7] Routing decision - user_input: 'Nothing. Just simply I can say.', current_idx: 0, phase: questions, done: False
+[2025-08-12 18:08:21,423: WARNING/ForkPoolWorker-7] User provided answer, processing answer
+[2025-08-12 18:08:21,427: WARNING/ForkPoolWorker-7] 🔍 EDGE CASE ANALYSIS:
+[2025-08-12 18:08:21,427: WARNING/ForkPoolWorker-7]    Type: normal
+[2025-08-12 18:08:21,427: WARNING/ForkPoolWorker-7]    Needs Special Handling: False
+[2025-08-12 18:08:22,915: INFO/ForkPoolWorker-7] LLM call completed in 1.48s
+[2025-08-12 18:08:22,915: WARNING/ForkPoolWorker-7] 🧠 SMART INTERVIEWER ANALYSIS:
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7]    Overall Score: 1.0/10
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7]    Average Score: 1.0/10
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7]    STAR Status: missing all elements
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7]    Assessment: The candidate failed to answer the question, providing no information about their background or interest in AI/ML. This response indicates a lack of preparation or understanding of the interview process.
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7] 📈 DYNAMIC CONFIG: Using increased follow-up strategy
+[2025-08-12 18:08:22,916: WARNING/ForkPoolWorker-7] Classifying answer for: Tell me about yourself and your technical backgrou...
+[2025-08-12 18:08:23,688: INFO/ForkPoolWorker-7] LLM call completed in 0.77s
+[2025-08-12 18:08:23,688: WARNING/ForkPoolWorker-7] Raw classification response: 'NO'
+[2025-08-12 18:08:23,689: WARNING/ForkPoolWorker-7] Classification result: NO -> False
+[2025-08-12 18:08:23,689: WARNING/ForkPoolWorker-7] Handling off-topic intelligently: Nothing. Just simply I can say....
+[2025-08-12 18:08:24,689: INFO/ForkPoolWorker-7] LLM call completed in 1.00s
+[2025-08-12 18:08:24,690: WARNING/ForkPoolWorker-7] Intelligent off-topic response: "I appreciate that. Now, let's dive back into your experience with large-scale AI model deployment."
+[2025-08-12 18:08:24,693: WARNING/ForkPoolWorker-7] Interview result: {'messages': [], 'room_id': 'asc1ik1v', 'user_input': 'Nothing. Just simply I can say.', 'bot_response': '"I appreciate that. Now, let\'s dive back into your experience with large-scale AI model deployment." Describe a challenging technical project you worked on. What was your approach and what did you learn?', 'question_idx': 1, 'done': False, 'phase': 'questions', 'follow_up_count': 0, 'conversation_history': '\nQ: Tell me about yourself and your technical background - what draws you to AI/ML engineering?\nA: Okay? So yeah.\nEdgeCase: Okay, I understand. It\'s perfectly alright if that specific question doesn\'t immediately come to mind, \\[Candidate Name].\n\nPerhaps we could shift gears slightly. Could you tell me about a time you had to learn a new technology or framework quickly to solve a problem?\nQ: Tell me about yourself and your technical background - what draws you to AI/ML engineering?\nA: Yeah. Nothing I can say, but I would like to learn about it.\nFollowup: Could you elaborate on the "portal model" you mentioned? What specific technical challenges did you face while building it?', 'performance_scores': [1.0, 1.0], 'average_score': 1.0}

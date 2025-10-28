@@ -98,7 +98,7 @@ class ConnectionManager:
         for room, conns in self.rooms.items():
             print(f"  - {room}: {len(conns)} connection(s)")
 
-    async def poll_and_send(self, task_id: str, room_id: str, task_type: str, timeout: int = 30):
+    async def poll_and_send(self, task_id: str, room_id: str, task_type: str, timeout: int = 60):
         """Poll Celery task result and send to WebSocket when ready."""
         from ai_interview.celery_app import celery_app
         import json

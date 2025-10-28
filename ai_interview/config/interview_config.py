@@ -12,7 +12,7 @@ class InterviewConfig:
     
     # API Configuration (for future technical question integration)
     TECHNICAL_QUESTIONS_API_URL = "https://api.example.com/questions"
-    API_TIMEOUT = 30  # seconds
+    API_TIMEOUT = 15  # seconds - reduced for faster recovery
     
     # Default question set (can be overridden by API)
     CORE_QUESTIONS = [

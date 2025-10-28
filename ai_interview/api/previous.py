@@ -5,6 +5,7 @@ import numpy as np
 import time
 import torch
 from scipy.io import wavfile
+from ai_interview.smart_turn.inference import predict_endpoint
 
 router = APIRouter()
 

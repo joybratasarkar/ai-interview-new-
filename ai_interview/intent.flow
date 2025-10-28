@@ -1,0 +1,41 @@
+[Front-end sends payload]
+      ↓
+process_natural_interview:
+  ├→ clean_cache
+  ├→ build state (phase, question_idx, follow_up_count, history, text, etc.)
+  ├→ route → 
+
+      └──► Greeting Phase
+            ├─ phase == "greeting"
+            ├─ Greeting node sends “Hi! I’m Chris… How are you today?”
+            └─ (front-end reply) → phase moves to "intro"
+
+      └──► Intro Phase
+            ├─ phase == "intro"
+            ├─ Intro node sends company context + “Ready to start?”
+            └─ (front-end reply) → phase moves to "questions", question_idx = 0
+
+      └──► Questions Phase (process_answer_node)
+            │
+            ├──► 1. Intent Classification
+            │       ├─ Is EndInterview? ──▶ complete_interview_node 
+            │       ├─ Is RepeatQuestion? ──▶ ask_question_node (same idx) 
+            │       ├─ Is PreviousQuestion? ──▶ question_idx-- + ask_question_node 
+            │       ├─ Is ClarifyQuestion? ──▶ clarify handler (re-explain Q) 
+            │       ├─ Is OffTopic? ──▶ off-topic redirect + next question 
+            │       ├─ Is Hesitation? ──▶ gentle prompt + re-ask current Q 
+            │       ├─ Is SmallTalk? ──▶ polite redirect + re-ask current Q 
+            │       └─ Else (Intent == Answer) ──▶ go to step 2
+            │
+            └──► 2. Default “Answer” path
+                    ├─ STAR & pattern analysis (heuristics)
+                    ├─ on-topic? (LLM classifier)
+                    │     ├─ No → off-topic redirect + next Q
+                    │     └─ Yes → should_ask_followup?
+                    │               ├─ Yes → LLM follow-up on same Q
+                    │               └─ No  → LLM transition + next Q (or complete)
+                    └─ form response and update question_idx & follow_up_count
+      ↓
+[Back-end returns bot_response + updated state]
+      ↓
+[Front-end displays next prompt or wraps up if done]

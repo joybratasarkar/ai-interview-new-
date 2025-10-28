@@ -1,0 +1,6 @@
+scenario_id,role_title,start_time,end_time,duration_minutes,total_exchanges,intents_tested,avg_response_time,min_response_time,max_response_time,success_rate,error_count,errors
+test_software_developer_1758008142526_2222,Software Developer,2025-09-16T13:05:42.526113,2025-09-16T13:06:53.681983,1.19,11,"SmallTalk, ClarifyQuestion, OffTopic, Hesitation, Answer, EndInterview, RepeatQuestion",0.574,0.116,4.109,1.0,0,
+test_data_scientist_1758008218694_3327,Data Scientist,2025-09-16T13:06:58.694410,2025-09-16T13:08:37.221231,1.64,10,"SmallTalk, ClarifyQuestion, Hesitation, Answer, EndInterview, RepeatQuestion",2.669,0.017,21.666,1.0,0,
+test_product_manager_1758008322238_9549,Product Manager,2025-09-16T13:08:42.238628,2025-09-16T13:08:52.244017,0.17,0,,0.0,0,0,0.0,1,Connection error: timed out during opening handshake
+test_devops_engineer_1758008337263_9837,DevOps Engineer,2025-09-16T13:08:57.263129,2025-09-16T13:10:12.899987,1.26,10,"SmallTalk, ClarifyQuestion, Hesitation, Answer, EndInterview, RepeatQuestion",0.805,0.014,7.618,1.0,0,
+test_ux_designer_1758008417919_2251,UX Designer,2025-09-16T13:10:17.919513,2025-09-16T13:11:40.540607,1.38,11,"SmallTalk, ClarifyQuestion, OffTopic, Hesitation, Answer, EndInterview, RepeatQuestion",1.104,0.016,3.879,1.0,0,
