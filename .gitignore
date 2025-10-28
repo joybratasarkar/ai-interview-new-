@@ -7,4 +7,4 @@ logs/
 
 sharedvenv/
 xooper.json
-.env
+.env".env" 
